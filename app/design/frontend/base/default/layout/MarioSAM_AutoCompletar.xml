@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <checkout_onepage_index>
+    <reference name="head">
+      <block type="page/html" name="MarioSAM_AutoCompletar" template="MarioSAM_AutoCompletar/autocompletar.phtml" />
+      <action method="addJs">
+        <script>MarioSAM_AutoCompletar/autocompletar.js</script>
+      </action>
+    </reference>
+  </checkout_onepage_index>
+  <checkout_multishipping>
+    <reference name="head">
+      <block type="page/html" name="MarioSAM_AutoCompletar" template="MarioSAM_AutoCompletar/autocompletar.phtml" />
+      <action method="addJs">
+        <script>MarioSAM_AutoCompletar/autocompletar.js</script>
+      </action>
+    </reference>
+  </checkout_multishipping>
+</layout>
