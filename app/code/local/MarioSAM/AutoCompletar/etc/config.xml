@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <modules>
-        <MarioSAM_AutoCompletar>
-            <version>0.0.1</version>
+  <modules>
+    <MarioSAM_AutoCompletar>
+      <version>0.0.1</version>
+    </MarioSAM_AutoCompletar>
+  </modules>
+  <frontend>
+    <routers>
+      <autocompletar>
+        <use>standard</use>
+        <args>
+          <module>MarioSAM_AutoCompletar</module>
+          <frontName>autocompletar</frontName>
+        </args>
+      </autocompletar>
+    </routers>
+    <layout>
+      <updates>
+        <MarioSAM_AutoCompletar module="MarioSAM_AutoCompletar">
+          <file>MarioSAM_AutoCompletar.xml</file>
         </MarioSAM_AutoCompletar>
-    </modules>
-    <frontend>
-        <routers>
-            <autocompletar>
-                <use>standard</use>
-                <args>
-                    <module>MarioSAM_AutoCompletar</module>
-                    <frontName>autocompletar</frontName>
-                </args>
-            </autocompletar>
-        </routers>
-    </frontend>
+      </updates>
+    </layout>
+  </frontend>
 </config>
